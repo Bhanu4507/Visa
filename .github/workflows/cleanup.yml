@@ -1,0 +1,12 @@
+name: Dummy CI Pass
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  dummy-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "✅ Dummy workflow passed."
